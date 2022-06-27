@@ -1,0 +1,113 @@
+.home{
+    background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.calculadora{
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0);    
+    flex-wrap: wrap;
+    background-color: rgb(130, 35, 225);
+    border-radius: 10px;
+}
+#display{
+    width: 400px;
+    height: 100px;
+    font-size: 50px;
+    text-align: right;
+    border-radius: 20px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    align-items:  center;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+
+.botao{
+    font-size: 30px;
+    background-color: rgb(23, 94, 226);
+    cursor: pointer;
+    border-radius: 10px;
+    
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+.btn-Top{
+    border-radius: 10px;
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 5px;    
+}
+.botao:hover{
+    background-color: rgb(240, 173, 56);
+    color: rgb(255, 255, 255);
+}
+#btn-clear{
+    flex:1;
+    height:100%;
+}
+#btn-backspace{
+    flex:1;    
+    height:100%;
+}
+.btn-Middle{
+    flex:1;
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 400px;
+     
+}
+.numeros {
+    flex:1 ;
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;    
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.numeros li{
+    width: 24%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;    
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    margin: 2px;
+}
+.operadores{
+    background-color: rgb(181, 0, 0);
+    margin: 2px;
+}
+.numeros li:hover{
+    background-color: rgb(90, 2, 2);
+    color: rgb(255, 255, 255);
+}
