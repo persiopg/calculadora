@@ -4,7 +4,7 @@ import './footer.css';
 function footer(){
     return (
         <footer>
-            <p>Calculadora</p>
+            <p>Desenvolvidor por Persio</p>
         </footer>
     );
 }

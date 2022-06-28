@@ -1,5 +1,5 @@
 .home{
-    background-color: #000000;
+    background-color: #434343;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -17,8 +17,9 @@
     justify-content: center;
     border: 1px solid rgb(0, 0, 0);    
     flex-wrap: wrap;
-    background-color: rgb(130, 35, 225);
-    border-radius: 10px;
+    background-color: rgb(77, 76, 79);
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 #display{
     width: 400px;
@@ -65,7 +66,11 @@
     height:100%;
 }
 #btn-backspace{
-    flex:1;    
+    flex: 0.5;    
+    height:100%;
+}
+#btn-inverte{
+    flex: 0.5;    
     height:100%;
 }
 .btn-Middle{
@@ -82,7 +87,7 @@
     flex:1 ;
     background-color: rgb(100, 100, 100);
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     list-style: none;    
     width: 400px;
@@ -92,7 +97,21 @@
     border-radius: 10px;
 }
 .numeros li{
+    
     width: 24%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;    
+    margin: 2px;
+}
+
+.numeros li > button{    
+    border:none;
+    width: 100%;
     height: 95px;
     display: flex;
     align-items: center;
@@ -103,11 +122,26 @@
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
     margin: 2px;
 }
-.operadores{
+.operadores > button{
+    width: 100%;
+    height: 100%;
     background-color: rgb(181, 0, 0);
     margin: 2px;
 }
-.numeros li:hover{
+.numero > button{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(159, 155, 155);
+    margin: 2px;
+}
+
+.operadores button:hover{
     background-color: rgb(90, 2, 2);
     color: rgb(255, 255, 255);
+    box-shadow: none;
+}
+.numero button:hover{
+    background-color: rgb(132, 131, 131);
+    color: rgb(0, 0, 0);
+    box-shadow: none;
 }
