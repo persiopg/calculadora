@@ -111,19 +111,20 @@ function calculadora(){
     const btnPonto = () => {
         document.getElementById("display").value += ".";
     };
-
+    
     const number = (e) =>{
+        let numberBtn = document.querySelectorAll(".btn-number");
+
         if(ultimaOperacion === ""){
             document.getElementById("display").value = null;
             ultimaOperacion="escrevendo";
         }
         document.getElementById("display").value += e.target.value;
     };
-
     return(
         <div className="home">
         <div className='calculadora'>
-            <input type="text" id="display" placeholder="0" readOnly />
+            <input type="text" id="display" placeholder="0" readOnly/>
             <div className="botoes">
                 <div className="btn-Top">
                     <button className="botao" onClick={btnLimpar} id="btn-clear">C</button>
@@ -132,20 +133,20 @@ function calculadora(){
                 </div>    
                 <div className="btn-Middle">        
                     <div className='btn-group'>
-                        <ul className='numeros'>
-                            <li className='numero'><button onClick={number} value="9">9</button></li>
-                            <li className='numero'><button onClick={number} value="8">8</button></li>
-                            <li className='numero'><button onClick={number} value="7">7</button></li>
+                        <ul className='numeros' >
+                            <li className='numero'><button onClick={number} className="btn-number" value="9">9</button></li>
+                            <li className='numero'><button onClick={number} className="btn-number" value="8">8</button></li>
+                            <li className='numero'><button onClick={number} className="btn-number" value="7">7</button></li>
                             <li className='operadores'><button onClick={btnDividir}> &divide; </button></li>
 
-                            <li className='numero'><button onClick={number} value="6">6</button></li>
-                            <li className='numero'><button onClick={number} value="5">5</button></li>
-                            <li className='numero'><button onClick={number} value="4">4</button></li>
+                            <li className='numero'><button onClick={number} className="btn-number" value="6">6</button></li>
+                            <li className='numero'><button onClick={number} className="btn-number" value="5">5</button></li>
+                            <li className='numero'><button onClick={number} className="btn-number" value="4">4</button></li>
                             <li className='operadores'><button onClick={btnMultiplicar}>x</button></li>
 
-                            <li className='numero'><button onClick={number} value="3">3</button></li>
-                            <li className='numero'><button onClick={number} value="2">2</button></li>
-                            <li className='numero'><button onClick={number} value="1">1</button></li>
+                            <li className='numero'><button onClick={number} className="btn-number" value="3">3</button></li>
+                            <li className='numero'><button onClick={number} className="btn-number" value="2">2</button></li>
+                            <li className='numero'><button onClick={number} className="btn-number" value="1">1</button></li>
                             <li className='operadores'><button onClick={btnSubtrair}> - </button></li>
                             
                             <li className='numero'><button onClick={number} value="0">0</button></li>                
